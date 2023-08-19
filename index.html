@@ -1,0 +1,185 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Navigation Bar</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <div>
+            <a href="#">Library System</a>
+        </div>
+        <div id="nav-b">
+            <a href="#books">Books</a>
+            <a href="#register">Register</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Logout</a>
+        </div>
+    </div>
+    <section id="books">
+        <h2>Books</h2>
+        <table>
+            <tr>
+                <th>Book ID</th>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Genre</th>
+                <th>Availability</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>
+                    Harry Potter and the Sorcerer's Stone
+                    <table class="nested-table">
+                        <tr>
+                            <th>Publication Date</th>
+                            <td>1997-06-26</td>
+                        </tr>
+                        <tr>
+                            <th>Page Count</th>
+                            <td>320</td>
+                        </tr>
+                        <tr>
+                            <th>ISBN</th>
+                            <td>978-0439708180</td>
+                        </tr>
+                    </table>
+                </td>
+                <td>J.K. Rowling</td>
+                <td>Fantasy</td>
+                <td>In Stock</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>
+                    The Candy House
+                    <table class="nested-table">
+                        <tr>
+                            <th>Publication Date</th>
+                            <td>2022-04-05</td>
+                        </tr>
+                        <tr>
+                            <th>Page Count</th>
+                            <td>368</td>
+                        </tr>
+                        <tr>
+                            <th>ISBN</th>
+                            <td>978-1476716770</td>
+                        </tr>
+                    </table>
+                </td>
+                <td>Jennifer Egan</td>
+                <td>Science fiction</td>
+                <td>In Stock</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>
+                    Young Mungo
+                    <table class="nested-table">
+                        <tr>
+                            <th>Publication Date</th>
+                            <td>2022-04-05</td>
+                        </tr>
+                        <tr>
+                            <th>Page Count</th>
+                            <td>400</td>
+                        </tr>
+                        <tr>
+                            <th>ISBN</th>
+                            <td>978-0-8021-5955-7</td>
+                        </tr>
+                    </table>
+                </td>
+                <td>Douglas Stuart</td>
+                <td>Coming-of-age story</td>
+                <td>In Stock</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>
+                    The Book Thief
+                    <table class="nested-table">
+                        <tr>
+                            <th>Publication Date</th>
+                            <td>2005-03-26</td>
+                        </tr>
+                        <tr>
+                            <th>Page Count</th>
+                            <td>584</td>
+                        </tr>
+                        <tr>
+                            <th>ISBN</th>
+                            <td>033036426X</td>
+                        </tr>
+                    </table>
+                </td>
+                <td>Markus Zusak</td>
+                <td>Historical fiction</td>
+                <td>Out of Stock</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>
+                    Little Women
+                    <table class="nested-table">
+                        <tr>
+                            <th>Publication Date</th>
+                            <td>1868-03-19</td>
+                        </tr>
+                        <tr>
+                            <th>Page Count</th>
+                            <td>759</td>
+                        </tr>
+                        <tr>
+                            <th>ISBN</th>
+                            <td>978-11384567</td>
+                        </tr>
+                    </table>
+                </td>
+                <td>Lousia May Alcott</td>
+                <td>Coming-of-age</td>
+                <td>In Stock</td>
+            </tr>
+        </table>
+    </section>
+    <section id="register">
+        <h2>Register</h2>
+        <form class="registration-form" action="#">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName" required>
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName" required>
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="dob" required>
+            <label for="age">Age</label>
+            <input type="number" id="age" name="age" min="5" max="100" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required>
+            <input type="submit" value="Register">
+        </form>
+    </section>
+</body>
+
+</html>
